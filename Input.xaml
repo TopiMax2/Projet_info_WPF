@@ -1,0 +1,31 @@
+﻿<Window x:Class="Projet_info_WPF.Input"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_info_WPF"
+        mc:Ignorable="d"
+        Title="Input" Height="182" Width="628">
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="69*" />
+            <ColumnDefinition Width="194*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image Source="/WpfTutorialSamples;component/Images/question32.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,6,20,6" />
+
+        <Label x:Name="lblQuestion" Content="Entrez le nom de l'image que vous souhaitez modifier (sans le .bmp) :" Grid.ColumnSpan="3" Margin="71,0,1,18" Grid.RowSpan="2"/>
+        <TextBox Name="txtAnswer" Grid.Column="1" Grid.Row="1" MinWidth="250" Grid.ColumnSpan="2" Margin="0,0,0,35" Grid.RowSpan="2">Answer</TextBox>
+
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Right" Margin="0,15,0,0" Grid.Column="2">
+            <Button IsDefault="True" Name="btnDialogOk" Click="btnDialogOk_Click" MinWidth="60" Margin="0,0,10,0">_Ok</Button>
+            <Button IsCancel="True" MinWidth="60">_Cancel</Button>
+        </WrapPanel>
+    </Grid>
+</Window>
