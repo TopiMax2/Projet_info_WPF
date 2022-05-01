@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_info_WPF"
         mc:Ignorable="d"
-        Title="Input" Height="182" Width="628">
+        Title="Input" Height="150" Width="628">
     <Grid Margin="15">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -18,7 +18,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Image Source="/WpfTutorialSamples;component/Images/question32.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,6,20,6" />
+        <Image Source="/Blue_question_mark_icon.svg.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,6,20,6" />
 
         <Label x:Name="lblQuestion" Content="Entrez le nom de l'image que vous souhaitez modifier (sans le .bmp) :" Grid.ColumnSpan="3" Margin="71,0,1,18" Grid.RowSpan="2"/>
         <TextBox Name="txtAnswer" Grid.Column="1" Grid.Row="1" MinWidth="250" Grid.ColumnSpan="2" Margin="0,0,0,35" Grid.RowSpan="2">Answer</TextBox>

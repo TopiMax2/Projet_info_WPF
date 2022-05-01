@@ -17,7 +17,7 @@ namespace Projet_info_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
-    /// Menu principal de notre projet, on y accède au traitement d'image basique, la création d'image, la convolution, et bien plus
+    /// Menu principal de notre projet, on y accède au traitement d'image basique et autres menus disponibles
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -27,7 +27,7 @@ namespace Projet_info_WPF
         }
 
         /// <summary>
-        /// Programme lancer au cliquement du bouton "Noir et Blanc"
+        /// Programme lancé au cliquement du bouton "Noir et Blanc"
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

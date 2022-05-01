@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Blue_question_mark_icon.svg.png" />
     <None Remove="Julia_test.bmp" />
     <None Remove="Mandelbrot.bmp" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Blue_question_mark_icon.svg.png" />
     <Resource Include="Julia_test.bmp" />
     <Resource Include="Mandelbrot.bmp" />
   </ItemGroup>
