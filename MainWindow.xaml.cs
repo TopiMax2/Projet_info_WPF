@@ -104,14 +104,38 @@ namespace Projet_info_WPF
             }
         }
 
-        private void Convolution_Infos_TextChanged(object sender, TextChangedEventArgs e)
+        private void Histo_button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Fractales_Infos_Copy_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            Input input = new Input("Entrez le nom de l'image a modifier (sans le .bmp) qui se trouve dans le dossier /Images", "Nom de l'image");
+            string filename = "";
+            if(input.ShowDialog() == true)
+            {
+                filename = input.Answer;
+                filename = "Images/" + filename + ".bmp";
+                MyImage histo = new MyImage(filename);
+                Input Couleur = new Input("Choisissez une couleur à analyser pour l'histogramme :", "VERT / BLEU / ROUGE");
+                string couleursel = "";
+                if (Couleur.ShowDialog() == true)
+                {
+                    couleursel = Couleur.Answer;
+                }
+                couleursel = couleursel.ToUpper();
+                switch (couleursel)
+                {
+                    case "VERT":
+                        histo.hist(1);
+                        break;
+                    case "BLEU":
+                        histo.hist(2);
+                        break;
+                    case "ROUGE":
+                        histo.hist(3);
+                        break;
+                    default:
+                        MessageBox.Show("Erreur dans l'entrée de la couleur, veuillez recommencer", "ERREUR");
+                        break;
+                }
+            }
         }
     }
 }

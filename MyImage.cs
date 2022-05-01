@@ -746,8 +746,7 @@ namespace Projet_info_WPF
 
         #endregion
 
-#endregion
-        #region Créer Image
+        #region Histogramme
 
         public void hist(int couleur)
 
@@ -805,9 +804,13 @@ namespace Projet_info_WPF
             }
             MyImage hist = new MyImage(256, max);
             hist.RGB_matrix = histogramme;
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             hist.From_Image_To_File(filename);
 
         }

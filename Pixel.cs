@@ -19,6 +19,13 @@ namespace Projet_info_WPF
             this.Bleu = a[2];
         }
 
+        public Pixel(int r, int g, int b)
+        {
+            Rouge = (byte)r;
+            Vert = (byte)g;
+            Bleu = (byte)b;
+        }
+
         public byte[] Pixel_en_bytes()
         {
             byte byte_1 = Rouge;

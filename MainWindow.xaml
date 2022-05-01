@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_info_WPF"
         mc:Ignorable="d"
-        Title="Problème Scientifique Informatique" Height="450" Width="800">
+        Title="Problème Scientifique Informatique" Height="500" Width="1000
+        ">
     <Grid ClipToBounds="True" Cursor="Arrow">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="547*"/>
@@ -16,18 +17,19 @@
         </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="8,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="37" FontWeight="Bold"><Run Text="Menu"/><Run Language="fr-fr" Text=" Principal"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="39" Margin="25,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontSize="25" FontStyle="Normal"><Run Language="fr-fr" Text="Traitement d'Images"/></TextBlock>
-        <Button x:Name="Noir_et_Blanc" Content="Noir et Blanc" HorizontalAlignment="Left" Height="30" Margin="64,185,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
-        <Button x:Name="Grisage" Content="Greyshade" HorizontalAlignment="Left" Height="30" Margin="65,235,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_1"/>
-        <Button x:Name="Agrandissement" Content="Agrandissement" HorizontalAlignment="Left" Height="30" Margin="65,284,0,0" VerticalAlignment="Top" Width="150" Click="Agrandissement_Click"/>
-        <Button x:Name="Miroir" Content="Effet Miroir" HorizontalAlignment="Left" Height="30" Margin="65,333,0,0" VerticalAlignment="Top" Width="150" Click="Miroir_Click"/>
+        <Button x:Name="Noir_et_Blanc" Content="Noir et Blanc" HorizontalAlignment="Left" Height="30" Margin="64,175,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        <Button x:Name="Grisage" Content="Greyshade" HorizontalAlignment="Left" Height="30" Margin="64,215,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click_1"/>
+        <Button x:Name="Agrandissement" Content="Agrandissement" HorizontalAlignment="Left" Height="30" Margin="64,255,0,0" VerticalAlignment="Top" Width="150" Click="Agrandissement_Click"/>
+        <Button x:Name="Miroir" Content="Effet Miroir" HorizontalAlignment="Left" Height="30" Margin="64,295,0,0" VerticalAlignment="Top" Width="150" Click="Miroir_Click"/>
         <GridSplitter HorizontalAlignment="Left" Margin="279,-22,0,0" Width="5"/>
         <TextBlock x:Name="Title_secondary" HorizontalAlignment="Left" Margin="299,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="491" Height="44" Grid.ColumnSpan="5"><Run Text="Création d'image"/><Run Language="fr-fr" Text="s et autres menus"/></TextBlock>
-        <Button x:Name="Convolution_Menu_Opener" Content="Convolution" Margin="337,149,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
-        <Button x:Name="Fractacle_menu_Opener" Content="Fractales" Margin="337,217,0,0" VerticalAlignment="Top" Height="36" FontWeight="Normal" FontSize="16" HorizontalAlignment="Left" Width="126"/>
-        <Button x:Name="QRCode_menu_Opener" Content="QR Code" Margin="337,286,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
-        <TextBlock x:Name="Infos_Convolution" HorizontalAlignment="Left" Margin="486,149,0,0" Text="Permet l'application de matrices de convolution sur une image afin de lui appliquer des filtres" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Width="286" Grid.ColumnSpan="5"/>
-        <TextBlock HorizontalAlignment="Left" Margin="486,217,0,0" Text="Permet la création de fractales à partir d'algorithmes différents" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="286" Grid.ColumnSpan="5"/>
-        <TextBlock HorizontalAlignment="Left" Margin="486,286,0,0" Text="Permet la génération et la lecture de QR Codes (version 1 et 2)" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontSize="13" Grid.ColumnSpan="5"/>
+        <Button x:Name="Convolution_Menu_Opener" Content="Convolution" Margin="337,150,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
+        <Button x:Name="Fractacle_menu_Opener" Content="Fractales" Margin="337,220,0,0" VerticalAlignment="Top" Height="36" FontWeight="Normal" FontSize="16" HorizontalAlignment="Left" Width="126"/>
+        <Button x:Name="QRCode_menu_Opener" Content="QR Code" Margin="337,290,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
+        <TextBlock x:Name="Infos_Convolution" HorizontalAlignment="Left" Margin="485,150,0,0" Text="Permet l'application de matrices de convolution sur une image afin de lui appliquer des filtres" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Width="286" Grid.ColumnSpan="5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="485,220,0,0" Text="Permet la création de fractales à partir d'algorithmes différents" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="286" Grid.ColumnSpan="5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="485,290,0,0" Text="Permet la génération et la lecture de QR Codes (version 1 et 2)" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontSize="13" Grid.ColumnSpan="5"/>
         <TextBlock Margin="0,0,20,19" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.Column="1"/>
+        <Button x:Name="Histo_button" Content="Histogramme" HorizontalAlignment="Left" Margin="64,335,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="Histo_button_Click"/>
     </Grid>
 </Window>
