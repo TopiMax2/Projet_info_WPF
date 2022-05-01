@@ -1,0 +1,19 @@
+﻿<Window x:Class="Projet_info_WPF.Fractale_menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_info_WPF"
+        mc:Ignorable="d"
+        Title="Fractale_menu" Height="500" Width="700">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="162,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="35"><Run Language="fr-fr" Text="Création d'une fractale"/></TextBlock>
+        <Button x:Name="Mandelbrot_button" Content="Mandelbrot" HorizontalAlignment="Left" Margin="92,167,0,0" VerticalAlignment="Top" Height="50" Width="140" FontSize="15" FontStyle="Italic" Click="Mandelbrot_button_Click"/>
+        <Button x:Name="Julia_button" Content="Julia" HorizontalAlignment="Left" Margin="470,167,0,0" VerticalAlignment="Top" Width="140" Height="50" FontSize="15" FontStyle="Italic" Click="Julia_button_Click"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="96,231,0,0" VerticalAlignment="Top" Width="140" Source="/Mandelbrot.bmp"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="470,231,0,0" VerticalAlignment="Top" Width="140" Source="/Julia_test.bmp"/>
+        <TextBlock Margin="0,0,10,10" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom"/>
+        <Button x:Name="Cancel_Button" Content="Retour" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" FontSize="13" Width="100" Height="50" Click="Cancel_Button_Click"/>
+
+    </Grid>
+</Window>

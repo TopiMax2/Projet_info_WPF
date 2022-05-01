@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Julia_test.bmp" />
     <None Remove="Mandelbrot.bmp" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Julia_test.bmp" />
     <Resource Include="Mandelbrot.bmp" />
   </ItemGroup>
 

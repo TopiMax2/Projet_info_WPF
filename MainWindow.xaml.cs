@@ -137,5 +137,19 @@ namespace Projet_info_WPF
                 }
             }
         }
+
+        private void Fractacle_menu_Opener_Click(object sender, RoutedEventArgs e)
+        {
+            var Page2 = new Fractale_menu();
+            Page2.Show(); 
+            this.Close(); 
+        }
+
+        private void Convolution_Menu_Opener_Click(object sender, RoutedEventArgs e)
+        {
+            var Page2 = new Convolution_Menu();
+            Page2.Show();
+            this.Close();
+        }
     }
 }

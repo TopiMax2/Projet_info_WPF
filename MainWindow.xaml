@@ -23,8 +23,8 @@
         <Button x:Name="Miroir" Content="Effet Miroir" HorizontalAlignment="Left" Height="30" Margin="64,295,0,0" VerticalAlignment="Top" Width="150" Click="Miroir_Click"/>
         <GridSplitter HorizontalAlignment="Left" Margin="279,-22,0,0" Width="5"/>
         <TextBlock x:Name="Title_secondary" HorizontalAlignment="Left" Margin="299,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Width="491" Height="44" Grid.ColumnSpan="5"><Run Text="Création d'image"/><Run Language="fr-fr" Text="s et autres menus"/></TextBlock>
-        <Button x:Name="Convolution_Menu_Opener" Content="Convolution" Margin="337,150,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
-        <Button x:Name="Fractacle_menu_Opener" Content="Fractales" Margin="337,220,0,0" VerticalAlignment="Top" Height="36" FontWeight="Normal" FontSize="16" HorizontalAlignment="Left" Width="126"/>
+        <Button x:Name="Convolution_Menu_Opener" Content="Convolution" Margin="337,150,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126" Click="Convolution_Menu_Opener_Click"/>
+        <Button x:Name="Fractacle_menu_Opener" Content="Fractales" Margin="337,220,0,0" VerticalAlignment="Top" Height="36" FontWeight="Normal" FontSize="16" HorizontalAlignment="Left" Width="126" Click="Fractacle_menu_Opener_Click"/>
         <Button x:Name="QRCode_menu_Opener" Content="QR Code" Margin="337,290,0,0" FontSize="16" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126"/>
         <TextBlock x:Name="Infos_Convolution" HorizontalAlignment="Left" Margin="485,150,0,0" Text="Permet l'application de matrices de convolution sur une image afin de lui appliquer des filtres" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Width="286" Grid.ColumnSpan="5"/>
         <TextBlock HorizontalAlignment="Left" Margin="485,220,0,0" Text="Permet la création de fractales à partir d'algorithmes différents" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="286" Grid.ColumnSpan="5"/>

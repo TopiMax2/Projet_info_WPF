@@ -1,0 +1,20 @@
+﻿<Window x:Class="Projet_info_WPF.Convolution_Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_info_WPF"
+        mc:Ignorable="d"
+        Title="Convolution_Menu" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" Text="Menu de la convolution" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Button x:Name="Contour_button" Content="Détéction des contours" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" FontSize="15" FontStyle="Italic" Width="150" Height="25" Click="Contour_button_Click"/>
+        <Button x:Name="Flou_Button" Content="Floutage" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="150" Height="25" FontStyle="Italic" FontSize="15" Click="Flou_Button_Click"/>
+        <TextBlock Margin="0,0,10,10" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom"/>
+        <Button x:Name="Repoussage_Button" Content="Repoussage" HorizontalAlignment="Left" Margin="550,150,0,0" VerticalAlignment="Top" Width="150" Height="25" FontSize="15" FontStyle="Italic" Click="Repoussage_Button_Click"/>
+        <Button x:Name="Cancel_Button" Content="Retour" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" FontSize="13" Width="100" Height="50" Click="Cancel_Button_Click"/>
+        <Button x:Name="Contraste_Button" Content="Contraste" HorizontalAlignment="Left" Margin="550,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.226,0.321" Width="150" Height="25" FontSize="15" FontStyle="Italic"/>
+        <Button x:Name="Bord_Button" Content="Renforcement des bords" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Width="200" Height="30" Click="Button_Click" FontSize="15" FontStyle="Italic"/>
+
+    </Grid>
+</Window>

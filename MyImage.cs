@@ -684,9 +684,13 @@ namespace Projet_info_WPF
             //filtre pour détecter les contours
             int[,] conv = { { 0, 1, 0 }, { 1, -4, 1 }, { 0, 1, 0 } };
             Convolution(conv, false);
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             From_Image_To_File(filename);
         }
 
@@ -697,9 +701,13 @@ namespace Projet_info_WPF
             //filtre flou
             int[,] conv = { { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 } };
             Convolution(conv, true);
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             From_Image_To_File(filename);
         }
 
@@ -711,9 +719,13 @@ namespace Projet_info_WPF
             //filtre pour repoussage de l'image
             int[,] conv = { { -2, -1, 0 }, { -1, 1, 1 }, { 0, 1, 2 } };
             Convolution(conv, false);
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             From_Image_To_File(filename);
         }
 
@@ -724,9 +736,13 @@ namespace Projet_info_WPF
             //filtre pour augmenter le contraste de l'image 
             int[,] conv = { { 0, -1, 0 }, { -1, 5, -1 }, { 0, -1, 0 } };
             Convolution(conv, false);
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             From_Image_To_File(filename);
         }
 
@@ -737,9 +753,13 @@ namespace Projet_info_WPF
             //filtre pour renforcer les bords d'une image
             int[,] conv = { { 0, 0, 0 }, { -1, 1, 0 }, { 0, 0, 0 } };
             Convolution(conv, false);
-            Console.WriteLine("[*] Réussi !");
-            Console.WriteLine("[!] Sous quel nom voulez vous enregistrer cette image ?");
-            string filename = "./images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             From_Image_To_File(filename);
         }
 
