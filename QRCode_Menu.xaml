@@ -1,0 +1,18 @@
+﻿<Window x:Class="Projet_info_WPF.QRCode_Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_info_WPF"
+        mc:Ignorable="d"
+        Title="QRCode_Menu" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="QRCode_title" HorizontalAlignment="Left" Margin="207,30,0,0" Text="Génération de QR Code" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" FontWeight="Bold"/>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Margin="200,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="165,142,0,0" Text="Entrez une phrase a encoder en QR Code (maximum de 47 charactères)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15"/>
+        <TextBlock Margin="0,0,10,10" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom"/>
+        <Button x:Name="Generate_Button" Content="Générer" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="125" Height="30" FontStyle="Normal" Click="Generate_Button_Click" FontSize="15"/>
+        <Button x:Name="Cancel_button" Content="Retour" HorizontalAlignment="Left" Margin="40,375,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="14" Click="Cancel_button_Click"/>
+
+    </Grid>
+</Window>

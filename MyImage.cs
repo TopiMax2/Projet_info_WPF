@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Projet_info_WPF
 {
@@ -349,7 +350,7 @@ namespace Projet_info_WPF
                 }
             }
             File.WriteAllBytes(filename, result); // Ecriture de l'image
-            Console.Write("Wrote all bytes");
+            MessageBox.Show("Image correctement enregistrée dans le dossier ./Images/ sous le nom : " + filename+" !", "Success");
             
             return true;
         }

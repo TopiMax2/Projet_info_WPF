@@ -151,5 +151,12 @@ namespace Projet_info_WPF
             Page2.Show();
             this.Close();
         }
+
+        private void QRCode_menu_Opener_Click(object sender, RoutedEventArgs e)
+        {
+            var Page2 = new QRCode_Menu();
+            Page2.Show();
+            this.Close();
+        }
     }
 }
