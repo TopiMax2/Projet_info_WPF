@@ -13,7 +13,7 @@
         <TextBlock Margin="0,0,10,10" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom"/>
         <Button x:Name="Repoussage_Button" Content="Repoussage" HorizontalAlignment="Left" Margin="550,150,0,0" VerticalAlignment="Top" Width="150" Height="25" FontSize="15" FontStyle="Italic" Click="Repoussage_Button_Click"/>
         <Button x:Name="Cancel_Button" Content="Retour" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" FontSize="13" Width="100" Height="50" Click="Cancel_Button_Click"/>
-        <Button x:Name="Contraste_Button" Content="Contraste" HorizontalAlignment="Left" Margin="550,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.226,0.321" Width="150" Height="25" FontSize="15" FontStyle="Italic"/>
+        <Button x:Name="Contraste_Button" Content="Contraste" HorizontalAlignment="Left" Margin="550,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.226,0.321" Width="150" Height="25" FontSize="15" FontStyle="Italic" Click="Contraste_Button_Click"/>
         <Button x:Name="Bord_Button" Content="Renforcement des bords" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Width="200" Height="30" Click="Button_Click" FontSize="15" FontStyle="Italic"/>
 
     </Grid>

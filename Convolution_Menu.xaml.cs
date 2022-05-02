@@ -69,7 +69,26 @@ namespace Projet_info_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Input inputDialog = new Input("Entrez le nom de l'image a modifier (sans le .bmp) qui se trouve dans le dossier /Images", "Nom de l'image");
+            if (inputDialog.ShowDialog() == true)
+            {
+                string filename = inputDialog.Answer;
+                filename = "Images/" + filename + ".bmp";
+                MyImage Bord = new MyImage(filename);
+                Bord.RenforcerBord();
+            }
+        }
 
+        private void Contraste_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Input inputDialog = new Input("Entrez le nom de l'image a modifier (sans le .bmp) qui se trouve dans le dossier /Images", "Nom de l'image");
+            if (inputDialog.ShowDialog() == true)
+            {
+                string filename = inputDialog.Answer;
+                filename = "Images/" + filename + ".bmp";
+                MyImage Contraste = new MyImage(filename);
+                Contraste.AugmenterContraste();
+            }
         }
     }
 }
