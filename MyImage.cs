@@ -258,7 +258,16 @@ namespace Projet_info_WPF
             return result;
         }
 
-
+        /// <summary>
+        /// Fonction principale qui permet de transformer un objet de notre classe MyImage en un ficher bmp executable
+        /// on entre simplement le nom du fichier a sauvegarder car toutes les informations du header et autres sont directement intégrées à l'objet
+        /// on reconstruit tout d'abord le header dans un tableau de byte grâce aux propriétés de l'objet de classe
+        /// on écrit ensuite du bas vers le haut les bytes qui compose l'image puis on écrit tout les bytes dans un fichier .bmp
+        /// 
+        /// Bonus : a la fin on affiche comme quoi la fonction a bien enregistrer l'image et l'affiche a l'utilisateur sur une fenêtre de résultat
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         public bool From_Image_To_File(string filename)
         {
             byte[] result = new byte[this.file_size];
@@ -351,7 +360,8 @@ namespace Projet_info_WPF
             }
             File.WriteAllBytes(filename, result); // Ecriture de l'image
             MessageBox.Show("Image correctement enregistrée dans le dossier ./Images/ sous le nom : " + filename+" !", "Success");
-            
+            Result affichage = new Result(filename);
+            affichage.Show();
             return true;
         }
 
