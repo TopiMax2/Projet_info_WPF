@@ -11,6 +11,7 @@ namespace Projet_info_WPF
     {
         public void QRcode(string txt)
         {
+            txt = txt.ToUpper();
             int v = 1;
             if (txt.Length > 25)
             {
