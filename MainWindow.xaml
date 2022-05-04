@@ -31,6 +31,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="485,290,0,0" Text="Permet la génération et la lecture de QR Codes (version 1 et 2)" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontSize="13" Grid.ColumnSpan="5"/>
         <TextBlock Margin="0,0,20,19" Text="Made by : Paul CUCHET &amp; Rémi DAI" TextWrapping="Wrap" HorizontalAlignment="Right" Width="193" Height="16" VerticalAlignment="Bottom" Grid.ColumnSpan="4" Grid.Column="1"/>
         <Button x:Name="Histo_button" Content="Histogramme" HorizontalAlignment="Left" Margin="64,335,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="Histo_button_Click"/>
-        <Button x:Name="Rotation90" Content="Rotation 90 Deg Droite" HorizontalAlignment="Left" Margin="64,370,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Rotation90_Click"/>
+        <Button x:Name="Rotation90" Content="Rotation 90 Deg Droite" HorizontalAlignment="Left" Margin="64,375,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Rotation90_Click"/>
     </Grid>
 </Window>
