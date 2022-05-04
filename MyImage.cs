@@ -451,9 +451,13 @@ namespace Projet_info_WPF
             int temp = this.hauteur;
             this.hauteur = this.largeur;
             this.largeur = temp;
-            Console.WriteLine("[*] Succès !");
-            Console.WriteLine("[?] Sous quel nom voulez vous sauvegarder cette image ?");
-            string filename = "Images/" + Console.ReadLine() + ".bmp";
+            Input nom = new Input("Sous quel nom voulez vous enregistrer la modification ?", "Nom du fichier (sans .bmp)");
+            string filename = "./Images/";
+            if (nom.ShowDialog() == true)
+            {
+                filename += nom.Answer;
+            }
+            filename += ".bmp";
             this.From_Image_To_File(filename);
         }
 
@@ -518,6 +522,13 @@ namespace Projet_info_WPF
 
         #region Filtres / Convolution
 
+        /// <summary>
+        /// Fonction générique qui permet d'appliquer une matrice de convolution a une matrice de pixel, on vérifie tous les cas (ligne du haut,ligne du bas, coin,au bord,...)
+        /// on multiplie ensuite tous les pixels adjacents par les valeurs de la matrice de convolution, sommons pour obtenir la nouvelle valeur du pixel
+        /// et ainsi appliquer le filtre
+        /// </summary>
+        /// <param name="conv"></param>
+        /// <param name="flou"></param>
         public void Convolution(int[,] conv, bool flou)
         {
             Pixel[,] imconv = new Pixel[hauteur, largeur];
@@ -778,7 +789,10 @@ namespace Projet_info_WPF
         #endregion
 
         #region Histogramme
-
+        /// <summary>
+        /// Fonction qui génére l'histogramme de chacune des trois couleurs d'une image
+        /// </summary>
+        /// <param name="couleur"> la couleur que l'on souhaite étudier </param>
         public void hist(int couleur)
 
         {
@@ -805,6 +819,7 @@ namespace Projet_info_WPF
                     }
                 }
             }
+            //définir la hauteur de l'image de notre histogramme
             int max = histo.Max();
             Pixel[,] histogramme = new Pixel[max, 256];
             for (int ligne = max - 1; ligne >= 0; ligne--)

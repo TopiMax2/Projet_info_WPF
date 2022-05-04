@@ -158,5 +158,17 @@ namespace Projet_info_WPF
             Page2.Show();
             this.Close();
         }
+
+        private void Rotation90_Click(object sender, RoutedEventArgs e)
+        {
+            Input inputDialog = new Input("Entrez le nom de l'image a modifier (sans le .bmp) qui se trouve dans le dossier /Images", "Nom de l'image");
+            if (inputDialog.ShowDialog() == true)
+            {
+                string filename = inputDialog.Answer;
+                filename = "Images/" + filename + ".bmp";
+                MyImage rota = new MyImage(filename);
+                rota.rotation90degrésDroite();
+            }
+        }
     }
 }
